@@ -22,5 +22,5 @@ while a != "q":
         print("Goodbye!")
     else: 
         print("Did not understand try again")
-(associations.find(char)
+(associations.find(char))
 associations[index]
