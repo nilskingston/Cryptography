@@ -17,6 +17,9 @@ if a = e:
 elif a = d:
     
 elif a = q:
-    print(
+    print("Goodbye!")
+
+else: 
+    print("Did not understand try again")
 (associations.find(char)
 associations[index]
