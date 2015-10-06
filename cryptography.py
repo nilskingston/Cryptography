@@ -15,7 +15,8 @@ a = ""
 while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
-        print("e")
+        encripting = input("Message?")
+        
     elif a == "d":
         print("d")
     elif a == "q":
