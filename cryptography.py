@@ -18,7 +18,7 @@ while a != "q":
         encripting = input("Message?")
         associations.find(char)
         key = input("Key? ")
-        secret = encripting * key
+        secret = encripting + key
         print(secret)
     elif a == "d":
         print("d")
