@@ -16,9 +16,11 @@ while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
         encripting = input("Message?")
-        associations.find(char)
         key = input("Key? ")
-        secret = encripting + key
+        def encode (encripting, key)
+            encode = []
+            
+       
         print(secret)
     elif a == "d":
         print("d")
