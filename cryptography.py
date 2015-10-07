@@ -18,6 +18,8 @@ while a != "q":
         encripting = input("Message?")
         associations.find(char)
         key = input("Key? ")
+        secret = encripting * key
+        print(secret)
     elif a == "d":
         print("d")
     elif a == "q":
@@ -25,4 +27,3 @@ while a != "q":
     else: 
         print("Did not understand try again")
 associations.find(char)
-associations[index]
