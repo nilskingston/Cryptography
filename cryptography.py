@@ -19,13 +19,13 @@ while a != "q":
         jumbler = input("What should the key be? ")
         e_list = []
         for x in encripting:
-            print(e_list.append(associations.find(x)))
-        list(jumbler)
+            e_list.append(associations.find(x))
+        j_list
         for x in jumbler:
-            jumbler = associations.find(x)
+            j_list.append(associations.find(x))
         newlist = []
         for x in range(2):
-            newlist.append(n_encripting[x] + n_jumbler[x])
+            newlist.append(e_list[x] + j_list[x])
         print(newlist)
         
         
