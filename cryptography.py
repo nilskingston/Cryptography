@@ -19,7 +19,7 @@ while a != "q":
         jumbler = input("What should the key be?")
         list(encripting)
         list(jumbler)
-        jumbled = [sum(x) for x in zip(encripting, key)]
+        jumbled = [sum(x) for x in zip(encripting, jumbler)]
         print(jumbled)
       
     elif a == "d":
