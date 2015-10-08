@@ -16,7 +16,7 @@ while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
         encripting = input("What do you want to encript?")
-        key = input("Key?")
+        key = input("What should the key be?")
         list(encripting)
         list(key)
         jumbled = [sum(x) for x in zip(encripting, key)]
@@ -24,6 +24,8 @@ while a != "q":
       
     elif a == "d":
         jumbled_code = input("Message?")
+        key = input("Key?")
+        list(jumbled_code)
         
     elif a == "q":
         print("Goodbye!")
