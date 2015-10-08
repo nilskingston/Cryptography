@@ -20,7 +20,7 @@ while a != "q":
         e_list = []
         for x in encripting:
             e_list.append(associations.find(x))
-        j_list
+        j_list = []
         for x in jumbler:
             j_list.append(associations.find(x))
         newlist = []
