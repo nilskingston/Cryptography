@@ -19,7 +19,7 @@ while a != "q":
         key = input("Key?")
         list(encripting)
         list(key)
-        [sum(x) for x in zip(encripting, key)]
+        jumpled = [sum(x) for x in zip(encripting, key)]
         
       
         
