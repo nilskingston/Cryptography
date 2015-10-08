@@ -19,13 +19,10 @@ while a != "q":
         key = input("Key?")
         list(encripting)
         list(key)
-        def tuple:
-            (encripting, key)
+        [sum(x) for x in zip(encripting, key)]
         
       
-            
-            
-       
+        
         print(secret)
     elif a == "d":
         print("d")
