@@ -19,8 +19,8 @@ while a != "q":
         key = input("Key?")
         list(encripting)
         list(key)
-        jumpled = [sum(x) for x in zip(encripting, key)]
-        
+        jumbled = [sum(x) for x in zip(encripting, key)]
+        print(jumbled)
       
         
         print(secret)
