@@ -15,17 +15,16 @@ a = ""
 while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
-        encripting = input("Message?")
+        encripting = input("What do you want to encript?")
         key = input("Key?")
         list(encripting)
         list(key)
         jumbled = [sum(x) for x in zip(encripting, key)]
         print(jumbled)
       
-        
-        print(secret)
     elif a == "d":
-        print("d")
+        jumbled_code = input("Message?")
+        
     elif a == "q":
         print("Goodbye!")
     else: 
