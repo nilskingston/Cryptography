@@ -24,7 +24,8 @@ while a != "q":
         for x in jumbler:
             j_list.append(associations.find(x))
         newlist = []
-        for x in range(2):
+        length = len(e_list)
+        for x in range(length):
             newlist.append(e_list[x] + j_list[x])
         print(newlist)
         
