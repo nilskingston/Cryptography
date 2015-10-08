@@ -16,8 +16,13 @@ while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
         encripting = input("Message?")
-        key = input("Key? ")
+        key = input("Key?")
+        list(encripting)
+        list(key)
+        def tuple:
+            (encripting, key)
         
+      
             
             
        
