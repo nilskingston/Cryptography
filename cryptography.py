@@ -35,9 +35,12 @@ while a != "q":
     elif a == "d":
         jumbled_code = input("Message?")
         key = input("Key?")
-        list(jumbled_code)
-        list(key)
-        message = [x1 - x2 for (x1, x2) in zip(jumbled_code, key)]
+        jum_list = []
+        for x in jumbled_code:
+            jum_list.append(associations.find(x))
+        k_list = []
+        for x in key:
+            k_list.append(associations.find(x))
         
     elif a == "q":
         print("Goodbye!")
