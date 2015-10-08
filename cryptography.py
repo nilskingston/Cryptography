@@ -38,7 +38,11 @@ while a != "q":
         k_list = []
         for x in key:
             k_list.append(associations.find(x))
-        
+        list = []
+        length = len(jum_list)
+        for x in range(length):
+            list.append(jum_list[x] - k_list[x])
+        print(list)
         
     elif a == "q":
         print("Goodbye!")
