@@ -25,8 +25,8 @@ while a != "q":
     elif a == "d":
         jumbled_code = input("Message?")
         key = input("Key?")
-        g = list(jumbled_code)
-        f = list(key)
+        list(jumbled_code)
+        list(key)
         message = [x1 - x2 for (x1, x2) in zip(jumbled-code, key)]
         
     elif a == "q":
