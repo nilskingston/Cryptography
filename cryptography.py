@@ -28,9 +28,6 @@ while a != "q":
         for x in range(length):
             newlist.append(e_list[x] + j_list[x])
         print(newlist)
-        
-        
-        
       
     elif a == "d":
         jumbled_code = input("Message?")
@@ -41,6 +38,7 @@ while a != "q":
         k_list = []
         for x in key:
             k_list.append(associations.find(x))
+        
         
     elif a == "q":
         print("Goodbye!")
