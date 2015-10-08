@@ -17,8 +17,8 @@ while a != "q":
     if a == "e":
         encripting = input("Message?")
         key = input("Key? ")
-        def encode (encripting, key)
-            encode = []
+        
+            
             
        
         print(secret)
@@ -28,4 +28,4 @@ while a != "q":
         print("Goodbye!")
     else: 
         print("Did not understand try again")
-associations.find(char)
+
