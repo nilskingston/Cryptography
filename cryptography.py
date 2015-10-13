@@ -24,7 +24,7 @@ while a != "q":
         for x in jumbler:
             j_list.append(associations.find(x))
         print(j_list)
-        print(type(zip(e_list, j_list)))
+        print(list(zip(e_list, j_list)))
     elif a == "d":
         jumbled_code = input("Message? ")
         key = input("Key? ")
