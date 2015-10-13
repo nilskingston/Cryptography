@@ -23,11 +23,8 @@ while a != "q":
         j_list = []
         for x in jumbler:
             j_list.append(associations.find(x))
-        if len(e_list) > len(j_list):
-            combined_list = zip(e_list, cycle(j_list))
-        else:
-            combined_list = zip(cycle(e_list), j_list)
-        print(combined_list)
+        print(j_list)
+        print(zip(e_list, j_list))
     elif a == "d":
         jumbled_code = input("Message? ")
         key = input("Key? ")
