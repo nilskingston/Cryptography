@@ -9,7 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-from itertools import cycle
+#from itertools import cycle
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 a = ""
 while a != "q":
@@ -41,6 +41,6 @@ while a != "q":
         
     elif a == "q":
         print("Goodbye!")
-else: 
-    print("Did not understand try again")
+    else: 
+        print("Did not understand try again")
 
