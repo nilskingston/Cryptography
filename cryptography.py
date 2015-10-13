@@ -23,7 +23,6 @@ while a != "q":
         j_list = []
         for x in jumbler:
             j_list.append(associations.find(x))
-        print(j_list)
         print(list(zip(e_list, j_list)))
     elif a == "d":
         jumbled_code = input("Message? ")
@@ -42,6 +41,6 @@ while a != "q":
         
     elif a == "q":
         print("Goodbye!")
-    else: 
-        print("Did not understand try again")
+else: 
+    print("Did not understand try again")
 
