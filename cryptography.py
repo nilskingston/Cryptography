@@ -13,6 +13,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 a = ""
 while a != "q":
+    from itertools import cycle
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
         encripting = input("What do you want to encript? ")
@@ -23,7 +24,11 @@ while a != "q":
         j_list = []
         for x in jumbler:
             j_list.append(associations.find(x))
-        print(list(zip(e_list, j_list)))
+        if len(e_list) > len(j_list):
+            combined_list = zip(e_list, cycle(j_list))
+        else:
+            combined_list = zip(cycle(e_list), j_list)
+        print(combined_list)
     elif a == "d":
         jumbled_code = input("Message? ")
         key = input("Key? ")
@@ -33,11 +38,11 @@ while a != "q":
         k_list = []
         for x in key:
             k_list.append(associations.find(x))
-        list = []
+        ghg = []
         length = len(jum_list)
         for x in range(length):
-            list.append(jum_list[x] - k_list[x])
-        print(list)
+            ghg.append(jum_list[x] - k_list[x])
+        print(ghg)
         
     elif a == "q":
         print("Goodbye!")
