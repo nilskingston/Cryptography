@@ -9,7 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-#from itertools import cycle
+
 from itertools import cycle
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 a = ""
@@ -28,7 +28,7 @@ while a != "q":
             combined_list = list(zip(e_list, cycle(j_list)))
         else:
             combined_list = list(zip(cycle(e_list), j_list))
-        print(combined_list)
+        list1, list2 = zip(*source_list)
         
         
         
