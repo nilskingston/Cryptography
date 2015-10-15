@@ -37,7 +37,7 @@ while a != "q":
         k_list = []
         for x in key:
             k_list.append(associations.find(x))
-        if len(jum_list) > len(k_list)
+        if len(jum_list) > len(k_list):
             unscrambled = list(zip(jum_list, cycle(k_list)))
         else:
             unsrcambled = list(zip(cycle(jum_list), k_list))
