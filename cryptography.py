@@ -28,10 +28,11 @@ while a != "q":
             combined_list = list(zip(e_list, cycle(j_list)))
         else:
             combined_list = list(zip(cycle(e_list), j_list))
-        list1, list2 = zip(*source_list)
-        
-        
-        
+        list1, list2 = zip(*combined_list)
+        final = [x + y for x, y in zip(list1, list2)]
+        for x in final:
+            print(associations[x], end='')
+        print("")
     elif a == "d":
         jumbled_code = input("Message? ")
         key = input("Key? ")
@@ -42,11 +43,14 @@ while a != "q":
         for x in key:
             k_list.append(associations.find(x))
         if len(jum_list) > len(k_list):
-            unscrambled = list(zip(jum_list, cycle(k_list)))
+            unscram = list(zip(jum_list, cycle(k_list)))
         else:
-            unsrcambled = list(zip(cycle(jum_list), k_list))
-        print(unscrambled)
-        
+            unscram = list(zip(cycle(jum_list), k_list))
+        list1, list2 = zip(*unscram)
+        done = ([x - y for x, y in zip(list1, list2)])
+        for x in done:
+            print(associations[x], end='')
+        print("")
         
     elif a == "q":
         print("Goodbye!")
