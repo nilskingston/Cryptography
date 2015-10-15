@@ -28,7 +28,8 @@ while a != "q":
             combined_list = list(zip(e_list, cycle(j_list)))
         else:
             combined_list = list(zip(cycle(e_list), j_list))
-        print(combined_list)
+        for x in combined_list
+            print(x[0] = x[1])
     elif a == "d":
         jumbled_code = input("Message? ")
         key = input("Key? ")
