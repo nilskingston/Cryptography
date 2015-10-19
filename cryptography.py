@@ -56,6 +56,7 @@ while a != "q":
         print("")
     elif a == "q":
         print("Goodbye!")
+        print("")
     else: 
         print("Did not understand, try again")
         print("")
