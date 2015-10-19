@@ -58,6 +58,6 @@ while a != "q":
         print("Goodbye!")
         print("")
     else: 
-        print("Did not understand, try again")
+        print("Did not understand command, try again")
         print("")
 
