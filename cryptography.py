@@ -53,11 +53,10 @@ while a != "q":
         for x in done:
             print(assoc[x], end='')
         print("")
-        print("")
+        print("")   
     elif a == "q":
         print("Goodbye!")
-        print("")
     else: 
-        print("Did not understand command, try again")
-        print("")
+        print("Did not understand command, try again.")
+        
 
