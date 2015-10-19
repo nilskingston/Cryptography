@@ -17,8 +17,8 @@ a = ""
 while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if a == "e":
-        encripting = input("Message ")
-        jumbler = input("Key ")
+        encripting = input("Message: ")
+        jumbler = input("Key: ")
         e_list = []
         for x in encripting:
             e_list.append(associations.find(x))
@@ -36,8 +36,8 @@ while a != "q":
         print("")
         print("")
     elif a == "d":
-        jumbled_code = input("Message ")
-        key = input("Key ")
+        jumbled_code = input("Message: ")
+        key = input("Key: ")
         jum_list = []
         for x in jumbled_code:
             jum_list.append(associations.find(x))
