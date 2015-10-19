@@ -12,6 +12,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 
 from itertools import cycle
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+assoc = 100*associations
 a = ""
 while a != "q":
     a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -31,7 +32,7 @@ while a != "q":
         list1, list2 = zip(*combined_list)
         final = [x + y for x, y in zip(list1, list2)]
         for x in final:
-            print(associations[x], end='')
+            print(assoc[x], end='')
         print("")
     elif a == "d":
         jumbled_code = input("Message ")
@@ -49,7 +50,7 @@ while a != "q":
         list1, list2 = zip(*unscram)
         done = ([x - y for x, y in zip(list1, list2)])
         for x in done:
-            print(associations[x], end='')
+            print(assoc[x], end='')
         print("")
         
     elif a == "q":
