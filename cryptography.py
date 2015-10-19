@@ -34,6 +34,7 @@ while a != "q":
         for x in final:
             print(assoc[x], end='')
         print("")
+        print("")
     elif a == "d":
         jumbled_code = input("Message ")
         key = input("Key ")
@@ -52,7 +53,7 @@ while a != "q":
         for x in done:
             print(assoc[x], end='')
         print("")
-        
+        print("")
     elif a == "q":
         print("Goodbye!")
     else: 
